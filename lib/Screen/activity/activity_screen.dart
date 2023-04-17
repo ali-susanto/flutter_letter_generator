@@ -1,4 +1,4 @@
-import 'package:e_letter/Screen/activity/activity_viewModel.dart';
+import 'package:e_letter/screen/activity/activity_viewModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:provider/provider.dart';

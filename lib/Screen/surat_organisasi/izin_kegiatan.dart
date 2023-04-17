@@ -1,10 +1,10 @@
-import 'package:e_letter/Helper/ToPdf/surat_organisasi/izin_kegiatan_pdf.dart';
+import 'package:e_letter/helper/ToPdf/surat_organisasi/izin_kegiatan_pdf.dart';
 import 'package:e_letter/Model/surat_organisasi/model_izin_organisasi.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
-import '../../Helper/pdf_manager.dart';
+import '../../helper/ToPdf/pdf_manager.dart';
 import '../../Model/activity/activity_model.dart';
 import '../../Widgets/datePicker.dart';
 import '../../Widgets/textfield.dart';

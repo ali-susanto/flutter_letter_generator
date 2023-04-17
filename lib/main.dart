@@ -1,18 +1,16 @@
-import 'package:e_letter/Screen/activity/activity_screen.dart';
-import 'package:e_letter/Screen/activity/activity_viewModel.dart';
-import 'package:e_letter/Screen/home/all_menu.dart';
-import 'package:e_letter/Screen/surat_organisasi/izin_kegiatan.dart';
-
-import 'package:e_letter/Screen/surat_organisasi/undangan.dart';
-import 'package:e_letter/Screen/surat_pekerjaan/surat_pengunduran.dart';
-import 'package:e_letter/Screen/surat_umum/form_izin_ortu.dart';
-import 'package:e_letter/Screen/surat_umum/form_surat_kuasa.dart';
+import 'package:e_letter/screen/activity/activity_viewModel.dart';
+import 'package:e_letter/screen/desktop/home/home_screen_desktop.dart';
+import 'package:e_letter/screen/surat_organisasi/izin_kegiatan.dart';
+import 'package:e_letter/screen/surat_organisasi/undangan.dart';
+import 'package:e_letter/screen/surat_pekerjaan/surat_pengunduran.dart';
+import 'package:e_letter/screen/surat_umum/form_izin_ortu.dart';
+import 'package:e_letter/screen/surat_umum/form_surat_kuasa.dart';
+import 'package:e_letter/responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'Screen/home/home_screen.dart';
-import 'Screen/content/content_viewModel.dart';
-import 'Screen/surat_pekerjaan/surat_izin_kerja.dart';
+import 'screen/mobile/home/home_screen_mobile.dart';
+import 'screen/content/content_viewModel.dart';
+import 'screen/surat_pekerjaan/surat_izin_kerja.dart';
 
 void main() {
   runApp(
@@ -62,35 +60,9 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       title: 'E-Letter',
       theme: ThemeData(
           primaryColor: const Color(0xff261865), primarySwatch: Colors.pink),
-      home: Scaffold(
-        bottomNavigationBar: Container(
-          margin: const EdgeInsets.all(5),
-          decoration: BoxDecoration(
-              color: const Color(0xff261863),
-              borderRadius: BorderRadius.circular(10)),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: DefaultTabController(
-              length: 1,
-              child: TabBar(
-                controller: _controller,
-                tabs: const [
-                  Tab(
-                    icon: Icon(Icons.home),
-                    text: 'Home',
-                  ),
-                  Tab(
-                    icon: Icon(Icons.history),
-                    text: 'Activity',
-                  )
-                ],
-              ),
-            ),
-          ),
-        ),
-        body: TabBarView(
-            controller: _controller,
-            children: const [HomeScreen(), ActivityScreen()]),
+      home: const Scaffold(
+        body: ResponsiveLayout(
+            mobileBody: HomeScreenMobile(), desktopBody: HomeScreenDesktop()),
       ),
     );
   }

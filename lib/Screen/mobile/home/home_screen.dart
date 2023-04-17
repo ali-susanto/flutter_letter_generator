@@ -1,22 +1,22 @@
-import 'package:e_letter/Screen/home/all_menu.dart';
-import 'package:e_letter/Screen/surat_umum/form_surat_kuasa.dart';
+import 'package:e_letter/screen/mobile/home/all_menu.dart';
+import 'package:e_letter/screen/surat_umum/form_surat_kuasa.dart';
 import 'package:e_letter/Widgets/header_carousel.dart';
 // import 'package:e_letter/Screen/home/home_screen_viewModel.dart';
 import 'package:e_letter/Widgets/card_menu.dart';
-import 'package:e_letter/Screen/content/content_list.dart';
+import 'package:e_letter/screen/content/content_list.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 // import 'package:provider/provider.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreenMobile extends StatefulWidget {
+  const HomeScreenMobile({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeScreenMobile> createState() => _HomeScreenMobileState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenMobileState extends State<HomeScreenMobile> {
   @override
   Widget build(BuildContext context) {
     //Size size = MediaQuery.of(context).size;
