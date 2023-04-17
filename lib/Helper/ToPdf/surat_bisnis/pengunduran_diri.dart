@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:e_letter/Model/surat_bisnis/model_resign.dart';
 
-import 'package:e_letter/helper/pdf_manager.dart';
+import 'package:e_letter/helper/toPdf/pdf_manager.dart';
 import 'package:pdf/pdf.dart';
 //import 'package:pdf/widgets.dart' as pw;
 import 'package:pdf/widgets.dart';

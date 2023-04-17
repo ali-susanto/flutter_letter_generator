@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:e_letter/Model/surat_umum/model_surat_kuasa.dart';
-import 'package:e_letter/helper/pdf_manager.dart';
+import 'package:e_letter/helper/toPdf/pdf_manager.dart';
 
 import 'package:pdf/widgets.dart';
 import 'package:pdf/pdf.dart';

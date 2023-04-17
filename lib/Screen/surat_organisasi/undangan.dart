@@ -2,7 +2,7 @@ import 'package:e_letter/Model/activity/activity_model.dart';
 import 'package:e_letter/Model/surat_organisasi/model_undangan.dart';
 import 'package:e_letter/screen/activity/activity_viewModel.dart';
 import 'package:e_letter/helper/ToPdf/surat_organisasi/undangan_pdf.dart';
-import 'package:e_letter/helper/pdf_manager.dart';
+import 'package:e_letter/helper/toPdf/pdf_manager.dart';
 import 'package:e_letter/Widgets/datePicker.dart';
 import 'package:e_letter/Widgets/textfield.dart';
 import 'package:flutter/material.dart';

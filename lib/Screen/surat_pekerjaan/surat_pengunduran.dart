@@ -1,7 +1,7 @@
 // ignore_for_file: unnecessary_statements
 
 import 'package:e_letter/Model/surat_bisnis/model_resign.dart';
-import 'package:e_letter/helper/pdf_manager.dart';
+import 'package:e_letter/helper/toPdf/pdf_manager.dart';
 import 'package:e_letter/Widgets/datePicker.dart';
 import 'package:e_letter/Widgets/textfield.dart';
 import 'package:flutter/material.dart';

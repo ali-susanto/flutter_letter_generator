@@ -1,6 +1,6 @@
 import 'package:e_letter/Model/surat_umum/model_surat_kuasa.dart';
 import 'package:e_letter/helper/ToPdf/surat_biasa/surat_kuasa_pdf.dart';
-import 'package:e_letter/helper/pdf_manager.dart';
+import 'package:e_letter/helper/toPdf/pdf_manager.dart';
 import 'package:e_letter/Widgets/datePicker.dart';
 import 'package:e_letter/Widgets/textfield.dart';
 import 'package:flutter/material.dart';
@@ -129,6 +129,7 @@ class _SuratKuasaScreenState extends State<SuratKuasaScreen> {
                                           if (value == null || value.isEmpty) {
                                             return 'Data tidak boleh kosong';
                                           }
+                                          return null;
                                         }),
                                   ),
                                   const SizedBox(
@@ -194,6 +195,7 @@ class _SuratKuasaScreenState extends State<SuratKuasaScreen> {
                                           if (value == null || value.isEmpty) {
                                             return 'Data tidak boleh kosong';
                                           }
+                                          return null;
                                         }),
                                   ),
                                   const SizedBox(
