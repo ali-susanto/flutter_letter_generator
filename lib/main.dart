@@ -7,6 +7,7 @@ import 'package:e_letter/screen/surat_umum/form_izin_ortu.dart';
 import 'package:e_letter/screen/surat_umum/form_surat_kuasa.dart';
 import 'package:e_letter/responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'screen/mobile/home/home_screen_mobile.dart';
 import 'screen/content/content_viewModel.dart';
@@ -59,7 +60,10 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       debugShowCheckedModeBanner: false,
       title: 'E-Letter',
       theme: ThemeData(
-          primaryColor: const Color(0xff261865), primarySwatch: Colors.pink),
+          textTheme:
+              GoogleFonts.nunitoSansTextTheme(Theme.of(context).textTheme),
+          primaryColor: const Color(0xff261865),
+          primarySwatch: Colors.pink),
       home: const Scaffold(
         body: ResponsiveLayout(
             mobileBody: HomeScreenMobile(), desktopBody: HomeScreenDesktop()),
