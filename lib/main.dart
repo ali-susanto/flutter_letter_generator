@@ -9,7 +9,7 @@ import 'package:e_letter/responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'screen/mobile/home/home_screen_mobile.dart';
+import 'Screen/mobile/home/home_screen_mobile.dart';
 import 'screen/content/content_viewModel.dart';
 import 'screen/surat_pekerjaan/surat_izin_kerja.dart';
 

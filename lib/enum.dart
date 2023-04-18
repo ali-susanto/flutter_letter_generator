@@ -1,3 +1,3 @@
-enum MenuState { home, history, allMenu, profile }
+enum MenuStates { home, history, allMenu, profile }
 
-enum State { loading, succes, error }
+enum States { loading, succes, error }
