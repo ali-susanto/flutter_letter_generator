@@ -1,16 +1,16 @@
 import 'package:e_letter/Screen/activity/activity_screen.dart';
 import 'package:e_letter/enum.dart';
 import 'package:e_letter/screen/mobile/home/all_menu.dart';
-import 'package:e_letter/screen/mobile/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../Helper/style/style.dart';
+import '../Screen/mobile/home/home_screen_mobile.dart';
 import '../Screen/profile/profile_screen.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({Key? key, required this.selectedMenu}) : super(key: key);
 
-  final MenuState selectedMenu;
+  final MenuStates selectedMenu;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class BottomNavBar extends StatelessWidget {
                   },
                   icon: Icon(
                     Icons.home_outlined,
-                    color: MenuState.home == selectedMenu
+                    color: MenuStates.home == selectedMenu
                         ? kPrimaryColor
                         : notActiveColor,
                   )),
@@ -63,7 +63,7 @@ class BottomNavBar extends StatelessWidget {
                   },
                   icon: Icon(
                     Icons.history_rounded,
-                    color: MenuState.history == selectedMenu
+                    color: MenuStates.history == selectedMenu
                         ? kPrimaryColor
                         : notActiveColor,
                   )),
@@ -80,7 +80,7 @@ class BottomNavBar extends StatelessWidget {
                   },
                   icon: Icon(
                     Icons.dashboard_customize_rounded,
-                    color: MenuState.allMenu == selectedMenu
+                    color: MenuStates.allMenu == selectedMenu
                         ? kPrimaryColor
                         : notActiveColor,
                   )),
@@ -97,7 +97,7 @@ class BottomNavBar extends StatelessWidget {
                   },
                   icon: Icon(
                     Icons.person,
-                    color: MenuState.profile == selectedMenu
+                    color: MenuStates.profile == selectedMenu
                         ? kPrimaryColor
                         : notActiveColor,
                   )),
